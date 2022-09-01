@@ -15,7 +15,6 @@ const BookSearch = () => {
     const [books,setBooks]=useState({items:[]})
     //fetch data
     const getBook=async()=>{
-        const Access_key="AIzaSyASOSCLXevWiRD4sc692YbkxdBbfFtLgNc"
         const Url=`https://www.googleapis.com/books/v1/volumes?q=${searchBook}`
         const response=await axios.get(Url)
        setBooks(response.data)

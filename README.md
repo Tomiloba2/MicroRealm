@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# MicroRealm
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started
+   
+   MicroRealm  website allows users to search and browse for images, movies and books on the net
 
-## Available Scripts
+## Prequisites
+  You need the following technologies to get the website up and running
+  - Any Browser
+  - A stable internet connection
+  You can view the live site here [livesite](https://)
+## Installation
+   Go to the root of your folder on your cmd  and run the following
 
-In the project directory, you can run:
+    `$ git clone https://github.com/Tomiloba2/MicroRealm.git/`
 
-### `npm start`
+    this allows you to clone the code into your local repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   `$ npm install`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+     this installs the dependencies
 
-### `npm test`
+     `$ npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+     this starts the project
 
-### `npm run build`
+## Dependencies used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The following Libraries were used as dependencies for this Project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   1 React: The entire project was bootstraped with react
+   2 Material-UI: This was used to design the UI of the app
+   3 Material-UI icons: This was used to import icons on the site
+   4 axios:This was used  to make asynchronous request using api keys
+   
+# Running Test
+ Make sure to run the following test to ensure that all goes well
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Unit Test
+checkout the following to make sure  each unit of the site work properly
 
-### `npm run eject`
+> $ click on each navigation link to ensure that they route to the appropriate page
+> $ click on the darkmode icon to make sure that it toggles between light and dark mode
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Integration Test
+ checkout the following to make sure that the overall site works properly
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ > $ Resize the viewport of your Browser to ensure that the site is responsive
+ > $ Input a value in the search field and click on search  button
+   
+# How to deploy
+ Make sure to deploy by merging the new changes to the master branch and pushing to github
+  type in the following command
+  
+  `$ git checkout master`
+   `$ git merge <branchName>`
+  `$ git push -u origin master `
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Diagrams
+ this are screenshots of the website
+### home page
+   home page UI
+     ![home page](./src/img/Screenshot%202022-09-07%20at%2007-09-39%20MicroRealm.png) 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Darkmode
+   Dark mode UI
+     ![dark mode](./src/img/Screenshot%202022-09-07%20at%2022-40-17%20MicroRealm.png)
+### Images search page
+  search for images
+     ![images page](./src/img/Screenshot%202022-09-07%20at%2007-14-27%20MicroRealm.png)
 
-## Learn More
+you can also view the livesite here [Live](https://)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Contributing
+  contributions are welcomed
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  If interested, fork and make changes to the project
 
-### Code Splitting
+# License
+  > MIT License
+# Acknowledgment
+  
+  I give thanks to everyone that supported the project and will still surpoert it in the future.
+  Thank You
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

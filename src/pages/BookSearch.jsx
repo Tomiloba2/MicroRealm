@@ -23,44 +23,6 @@ const BookSearch = () => {
         e.preventDefault()
         getBook()
     }
-    const handleError=(data)=>{
-        if(data.Response===true){
-           return( 
-            <Grid container spacing={1} m={3} sx={{
-                position:'relative',
-                top:"1vw"
-            }}>
-                {books.items.map((book,index)=>{
-                    return(
-                    <Grid item xs={6} sm={4} md={3} key={index}>
-                        <img
-                         src={`http://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1&source=gbs_api`} 
-                         alt={`${book.volumeInfo.title} book`} sx={{
-                            width:'50%',
-                            height:'auto',
-                            transition:'all ease 0.5s',
-                            '&:hover':{
-                                transform:'scale(1.1)'
-                            }
-                        }} />
-                        <h2>{book.volumeInfo.title}</h2>
-                        <h3>{book.volumeInfo.publishedDate} </h3>
-                    </Grid>
-                    )
-                })}
-            </Grid>
-           )
-        }
-        else{
-            return(
-                <Box sx={{
-                    margin:'5vw'
-                }}>
-                    <CircularProgress />
-                </Box>
-            )
-        }
-    }
     return ( 
         <div className="BookSearch">
             <Box     sx={{

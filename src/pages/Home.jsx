@@ -52,7 +52,7 @@ const Home = () => {
                 <Grid container spacing={2} sx={{
                     margin:{sm:'5vw 2vw 5vw 15vw',md:"4vw 2vw 4vw 6vw"}
                 }}>
-                    <Grid item xs={12} sm={10} md={4}>
+                    <Grid item xs={12} sm={10} md={6}>
                         <Card sx={{
                             borderRadius:'1vw',
                             boxShadow:'inset 2px 2px 5px #babecc,inset -5px -5px 10px #fffff7',
@@ -95,7 +95,7 @@ const Home = () => {
                             </CardActions>
                         </Card>
                     </Grid>
-                    <Grid item xs={12} sm={10} md={4}>
+                    <Grid item xs={12} sm={10} md={6}>
                     <Card sx={{
                             borderRadius:'1vw',
                             boxShadow:'inset 2px 2px 5px #babecc,inset -5px -5px 10px #fffff7',
@@ -138,7 +138,7 @@ const Home = () => {
                         </Card>
                     
                     </Grid>
-                    <Grid item xs={12} sm={10} md={4}>
+                    <Grid item xs={12} sm={10} md={6}>
                     <Card sx={{
                             borderRadius:'1vw',
                             boxShadow:'inset 2px 2px 5px #babecc,inset -5px -5px 10px #fffff7',
@@ -179,7 +179,6 @@ const Home = () => {
                                 }}>Browse</Button>
                             </CardActions>
                         </Card>
-                    
                     </Grid>
                 </Grid>
             </Box>

@@ -6,6 +6,7 @@ import MovieSearch from './pages/MovieSearch';
 import Layout from './pages/Layout';
 import Nav from './pages/Nav';
 import Footer from './components/Footer';
+import Error from './pages/Error';
 import { createTheme, Stack, ThemeProvider } from '@mui/material';
 import { useState } from 'react';
 
@@ -31,6 +32,7 @@ function App() {
               <Route path='image' element={<Image/>} />
               <Route path='movie' element={<MovieSearch/>} />
               <Route path='book' element={<BookSearch/>} />
+              <Route path='*' element={<Error/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

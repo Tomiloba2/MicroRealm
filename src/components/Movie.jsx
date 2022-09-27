@@ -23,7 +23,6 @@ const Movie = (props) => {
                     }}>
                     <Container>
                     <Card sx={{
-                        borderRadius:'4vw',
                         boxShadow:'inset 2px 2px 5px #babecc,inset -5px -5px 10px #fffff7',
                         transition:'all ease 0.5s',
                         '&:hover':{

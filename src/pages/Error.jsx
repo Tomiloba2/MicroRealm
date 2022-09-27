@@ -12,7 +12,7 @@ const Error = () => {
             <Box sx={{
                 textAlign:'center'
             }}>
-            <Typography variant='h1' color='primary'>
+            <Typography variant='h1'>
                 404 error
             </Typography>
             <Typography variant='h6'>

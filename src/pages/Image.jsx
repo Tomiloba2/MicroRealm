@@ -6,20 +6,21 @@ const Image = () => {
     const [searchImage,setSearchImage]=useState('')
     const [images,setImages]=useState([])
     //fetch data
-    const getImage=async()=>{
-        const Access_key="0zcR7hvM22q_M0-NNM8LKe0xH2WANa31A7FGhZrHN2k"
-        const Url=`https://api.unsplash.com/search/photos?page=2&query=${searchImage}&client_id=${Access_key}&per_page=20`
-        const response=await fetch(Url)
-        const data=await response.json()
-        const resultj=data.results
-       setImages(resultj)
-    }//use effect
+    //use effect
     useEffect(()=>{
+        const getImage=async()=>{
+            const Access_key="0zcR7hvM22q_M0-NNM8LKe0xH2WANa31A7FGhZrHN2k"
+            const Url=`https://api.unsplash.com/search/photos?page=2&query=${searchImage}&client_id=${Access_key}&per_page=20`
+            const response=await fetch(Url)
+            const data=await response.json()
+            const resultj=data.results
+           setImages(resultj)
+        }
+        getImage(searchImage)
+    },[searchImage])
+    /*const submit=()=>{
         getImage()
-    },[])
-    const submit=()=>{
-        getImage()
-    }
+    }*/
     return ( 
         <div className="Image">
             <Box     sx={{
@@ -42,9 +43,6 @@ const Image = () => {
                 placeholder='search for relevant images' 
                 sx={{marginLeft:{xs:'20vw',sm:' 8vw'}}}
                 />
-                <Button variant='contained' sx={{marginLeft:'2vw'}}
-                type='submit'
-                onClick={submit}>Search</Button>
             </Box>
             <Box>
                  <Grid container spacing={1} sx={{

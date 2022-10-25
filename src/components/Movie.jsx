@@ -6,8 +6,6 @@ import {Container,
      CardContent,
      IconButton,
      Avatar,
-     CircularProgress,
-     Box
 } from "@mui/material"
 import {MoreVert} from '@mui/icons-material'
 

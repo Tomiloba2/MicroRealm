@@ -14,6 +14,7 @@ import {
 } from '@mui/material'
 import { MoreVert } from '@mui/icons-material';
 
+
 const Home = () => {
     return ( 
         <div className="Home">
@@ -62,7 +63,7 @@ const Home = () => {
                             }
                             }}>
                             <CardMedia component='img' 
-                                src='https://images.unsplash.com/photo-1514539079130-25950c84af65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJhY3VsYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60' alt='Image' />
+                                src='https://images.unsplash.com/photo-1514539079130-25950c84af65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJhY3VsYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60' alt='poster' />
                             <CardHeader
                             action={
                                 <IconButton>
@@ -74,13 +75,13 @@ const Home = () => {
                             <CardContent>
                                 <ImageList cols={3} rowHeight={100}>
                                     <ImageListItem>
-                                        <img src="https://images.unsplash.com/photo-1533613220915-609f661a6fe1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXZlbmdlcnMlMjBpbmZpbml0eSUyMHdhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="picture" />
+                                        <img src="https://images.unsplash.com/photo-1533613220915-609f661a6fe1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXZlbmdlcnMlMjBpbmZpbml0eSUyMHdhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="poster" />
                                     </ImageListItem>
                                     <ImageListItem>
-                                        <img src="https://images.unsplash.com/photo-1605092262243-28c74cfc74c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGF2ZW5nZXJzJTIwaW5maW5pdHklMjB3YXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="picture" />
+                                        <img src="https://images.unsplash.com/photo-1605092262243-28c74cfc74c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGF2ZW5nZXJzJTIwaW5maW5pdHklMjB3YXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="poster" />
                                     </ImageListItem>
                                     <ImageListItem>
-                                        <img src="https://images.unsplash.com/photo-1584445584435-98136cadf4f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGF2ZW5nZXJzJTIwaW5maW5pdHklMjB3YXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="picture" />
+                                        <img src="https://images.unsplash.com/photo-1584445584435-98136cadf4f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGF2ZW5nZXJzJTIwaW5maW5pdHklMjB3YXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="poster" />
                                     </ImageListItem>
                                 </ImageList>
                             </CardContent>
@@ -104,7 +105,7 @@ const Home = () => {
                                 backgroundColor:'blue'
                             }
                             }}>
-                            <CardMedia component='img' src='https://media.istockphoto.com/photos/friends-in-the-cinema-picture-id1180701083?b=1&k=20&m=1180701083&s=170667a&w=0&h=i4RjlXSocbLiBpruz5KQY4wUlHZ9WX8bAVIMGf1qclw=' alt='Image' />
+                            <CardMedia component='img' src='https://media.istockphoto.com/photos/friends-in-the-cinema-picture-id1180701083?b=1&k=20&m=1180701083&s=170667a&w=0&h=i4RjlXSocbLiBpruz5KQY4wUlHZ9WX8bAVIMGf1qclw=' alt='poster' />
                             <CardHeader
                             action={
                                 <IconButton>
@@ -116,13 +117,13 @@ const Home = () => {
                             <CardContent>
                                 <ImageList cols={3} rowHeight={100}>
                                     <ImageListItem>
-                                        <img src="https://media.istockphoto.com/photos/popcorn-and-clapperboard-picture-id1191001701?b=1&k=20&m=1191001701&s=170667a&w=0&h=uVqDpnXNtnfbhB-F4sWac_t3oL_YSrDuHeCKdaJGS3U=" alt="picture" />
+                                        <img src="https://media.istockphoto.com/photos/popcorn-and-clapperboard-picture-id1191001701?b=1&k=20&m=1191001701&s=170667a&w=0&h=uVqDpnXNtnfbhB-F4sWac_t3oL_YSrDuHeCKdaJGS3U=" alt="poster" />
                                     </ImageListItem>
                                     <ImageListItem>
-                                        <img src="https://media.istockphoto.com/photos/empty-red-armchairs-of-a-theater-ready-for-a-show-picture-id1295114854?b=1&k=20&m=1295114854&s=170667a&w=0&h=W9ZbN674554Jsamxo5AfoO3DrSm_7qYS1EnANgusi9o=" alt="picture" />
+                                        <img src="https://media.istockphoto.com/photos/empty-red-armchairs-of-a-theater-ready-for-a-show-picture-id1295114854?b=1&k=20&m=1295114854&s=170667a&w=0&h=W9ZbN674554Jsamxo5AfoO3DrSm_7qYS1EnANgusi9o=" alt="poster" />
                                     </ImageListItem>
                                     <ImageListItem>
-                                        <img src="https://media.istockphoto.com/photos/happy-latin-american-couple-at-the-movies-picture-id688782978?b=1&k=20&m=688782978&s=170667a&w=0&h=2TNk6GvMF4I92-nl3IWMRQVsoPWQcTKdlZR0sUVQwG4=" alt="picture" />
+                                        <img src="https://media.istockphoto.com/photos/happy-latin-american-couple-at-the-movies-picture-id688782978?b=1&k=20&m=688782978&s=170667a&w=0&h=2TNk6GvMF4I92-nl3IWMRQVsoPWQcTKdlZR0sUVQwG4=" alt="poster" />
                                     </ImageListItem>
                                 </ImageList>
                             </CardContent>
@@ -147,7 +148,7 @@ const Home = () => {
                                 backgroundColor:'blue'
                             }
                             }}>
-                            <CardMedia component='img' src='https://media.istockphoto.com/photos/read-this-book-you-wont-regret-it-picture-id1334220585?b=1&k=20&m=1334220585&s=170667a&w=0&h=E812KKzLrFhiAGjHAakbOmc_Lrs_leRRBMQDcNIcreg=' alt='Image' />
+                            <CardMedia component='img' src='https://media.istockphoto.com/photos/read-this-book-you-wont-regret-it-picture-id1334220585?b=1&k=20&m=1334220585&s=170667a&w=0&h=E812KKzLrFhiAGjHAakbOmc_Lrs_leRRBMQDcNIcreg=' alt='poster' />
                             <CardHeader
                             action={
                                 <IconButton>
@@ -159,13 +160,13 @@ const Home = () => {
                             <CardContent>
                                 <ImageList cols={3} rowHeight={100}>
                                     <ImageListItem>
-                                        <img src="https://media.istockphoto.com/photos/books-on-display-in-the-corner-of-a-second-hand-bookstore-picture-id1129874863?b=1&k=20&m=1129874863&s=170667a&w=0&h=FTGHLcHTwhBCwYVQ-P4pJgrkIbwK0Kh94aYOUxTBRmg=" alt="picture" />
+                                        <img src="https://media.istockphoto.com/photos/books-on-display-in-the-corner-of-a-second-hand-bookstore-picture-id1129874863?b=1&k=20&m=1129874863&s=170667a&w=0&h=FTGHLcHTwhBCwYVQ-P4pJgrkIbwK0Kh94aYOUxTBRmg=" alt="poster" />
                                     </ImageListItem>
                                     <ImageListItem>
-                                        <img src="https://media.istockphoto.com/photos/young-gorgeous-female-student-standing-next-to-book-shelves-and-for-picture-id1278721683?b=1&k=20&m=1278721683&s=170667a&w=0&h=ZLm6elGCVjGPoRHM2WZv7trsa2twzYRSY_Xr_KOICj0=" alt="picture" />
+                                        <img src="https://media.istockphoto.com/photos/young-gorgeous-female-student-standing-next-to-book-shelves-and-for-picture-id1278721683?b=1&k=20&m=1278721683&s=170667a&w=0&h=ZLm6elGCVjGPoRHM2WZv7trsa2twzYRSY_Xr_KOICj0=" alt="poster" />
                                     </ImageListItem>
                                     <ImageListItem>
-                                        <img src="https://media.istockphoto.com/photos/female-student-searching-for-books-in-the-book-store-picture-id1149119293?b=1&k=20&m=1149119293&s=170667a&w=0&h=n-r6pkzNSD9eSn_D1QM54gsgMHkHK-pOGdOqg8LlWis=" alt="picture" />
+                                        <img src="https://media.istockphoto.com/photos/female-student-searching-for-books-in-the-book-store-picture-id1149119293?b=1&k=20&m=1149119293&s=170667a&w=0&h=n-r6pkzNSD9eSn_D1QM54gsgMHkHK-pOGdOqg8LlWis=" alt="poster" />
                                     </ImageListItem>
                                 </ImageList>
                             </CardContent>

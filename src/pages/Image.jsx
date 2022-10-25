@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react";
-import {Box,Grid,Typography,Button,TextField,CircularProgress} from '@mui/material'
+import {Box,Grid,Typography,Button,TextField} from '@mui/material'
 import { PhotoCamera } from "@mui/icons-material";
 
 const Image = () => {
@@ -19,41 +19,6 @@ const Image = () => {
     },[])
     const submit=()=>{
         getImage()
-    }
-    //handleError
-    const handleError=(data)=>{
-        if(data.Response===true){
-            return(
-                <Grid container spacing={1} sx={{
-                    position:'relative',
-                    top:"1vw"
-                }}>
-                    {images.map((val)=>{
-                        return(
-                        <Grid item xs={8} sm={8} md={6}>
-                            <img key={val.id} src={val.urls.small} alt='val.alt_description' sx={{
-                                width:'50%',
-                                height:'auto',
-                                transition:'all ease 0.5',
-                                '&:hover':{
-                                    transform:'scale(1.1)'
-                                }
-                            }} />
-                        </Grid>
-                        )
-                    })}
-                </Grid>
-            )
-        }
-        else{
-            return(
-                <Box sx={{
-                    margin:'5vw'
-                }}>
-                    <CircularProgress />
-                </Box>
-            )
-        }
     }
     return ( 
         <div className="Image">

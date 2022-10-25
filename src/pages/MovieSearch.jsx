@@ -7,18 +7,18 @@ import { MovieSharp } from "@mui/icons-material";
 const MovieSearch = () => {
     const [searchMovies,setSearchMovies]=useState('')
     const [movies,setMovies]=useState([])
-    //function to get movies
-      const getMovies=async()=>{
-         const Url=`http://www.omdbapi.com/?s=${searchMovies}&apikey=81967c1b`
-        const response=await fetch(Url)
-        const data=await response.json()
-        if(data.Search){
-            console.log(data.Search)
-            setMovies(data.Search)
-        }
-    }
     // calling the useEffect hooks
     useEffect(()=>{
+            //function to get movies
+      const getMovies=async()=>{
+        const Url=`https://www.omdbapi.com/?s=${searchMovies}&apikey=81967c1b`
+       const response=await fetch(Url)
+       const data=await response.json()
+       if(data.Search){
+           console.log(data.Search)
+           setMovies(data.Search)
+       }
+   }
         getMovies(searchMovies)
     },[searchMovies])
     return ( 

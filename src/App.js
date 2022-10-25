@@ -19,13 +19,13 @@ function App() {
   })
   return (
     <ThemeProvider theme={darkTheme}>
+      <BrowserRouter>
     <div className="App">
       <Stack direction='column' bgcolor={'background.default'} color={'text.primary'} sx={{
         minWidth:'100vw',
         minHeight:'100vh'
       }}>
       <Nav setMode={setMode} mode={mode}/>
-      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout setMode={setMode} mode={mode}/>}>
               <Route index element={<Home/>} />
@@ -35,10 +35,10 @@ function App() {
               <Route path='*' element={<Error/>}/>
           </Route>
         </Routes>
-      </BrowserRouter>
       <Footer/>
       </Stack>
     </div>
+    </BrowserRouter>
     </ThemeProvider>
   );
 }

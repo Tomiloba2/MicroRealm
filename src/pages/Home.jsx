@@ -7,71 +7,72 @@ import {
     CardContent,
     CardHeader,
     CardActions,
-    Button, 
+    Button,
     IconButton,
     ImageList,
     ImageListItem
 } from '@mui/material'
 import { MoreVert } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
-    return ( 
+    return (
         <div className="Home">
-           <Box sx={{
-                 width:{xs:'100%',sm:'80%'},
-                 height:{xs:'40vh',sm:'30vh',md:'20vh'},
-                 textAlign:'center',
-                 paddingTop:'5vh',
-                 borderRadius:"10%",
-                 marginTop:{xs:'3vw',md:'-2vw'},
-                 marginLeft:{xs:'1vw',sm:'19vw',md:"15vw"},
-                 marginBottom:{xs:'10vw',sm:"2vw"},
-                 boxShadow:'inset 2px 2px 5px #babecc,inset -5px -5px 10px #fffff7',
-                 //background:'whitesmoke'
-                 
-           }}><Box>
-            <Typography variant='h4'
-                color='primary' 
-                sx={{fontFamily:'algerian',marginLeft:'5vw'}}>
-                    MicroRealm
-            </Typography>
-                <Typography variant='h5'
-                     sx={{margin:{xs:'1vw 5vw',sm:'0.5vw 5vw'}}}>
+            <Box sx={{
+                width: { xs: '100%', sm: '80%' },
+                height: { xs: '40vh', sm: '30vh', md: '20vh' },
+                textAlign: 'center',
+                paddingTop: '5vh',
+                borderRadius: "10%",
+                marginTop: { xs: '3vw', md: '-2vw' },
+                marginLeft: { xs: '1vw', sm: '19vw', md: "15vw" },
+                marginBottom: { xs: '10vw', sm: "2vw" },
+                boxShadow: 'inset 2px 2px 5px #babecc,inset -5px -5px 10px #fffff7',
+                //background:'whitesmoke'
+
+            }}><Box>
+                    <Typography variant='h4'
+                        color='primary'
+                        sx={{ fontFamily: 'algerian', marginLeft: '5vw' }}>
+                        MicroRealm
+                    </Typography>
+                    <Typography variant='h5'
+                        sx={{ margin: { xs: '1vw 5vw', sm: '0.5vw 5vw' } }}>
                         Your mini_Realm of books, images and movies
-                </Typography>
-                <Typography sx={{
-                    margin:'0.5vw 4vw',
-                    padding:'0 5vw',
-                    fontStyle:'italic'
-                }}>
-                    Search and browse through our collection of books,Movies and images
-                </Typography>
+                    </Typography>
+                    <Typography sx={{
+                        margin: '0.5vw 4vw',
+                        padding: '0 5vw',
+                        fontStyle: 'italic'
+                    }}>
+                        Search and browse through our collection of books,Movies and images
+                    </Typography>
+                </Box>
             </Box>
-            </Box> 
             <Box>
                 <Grid container spacing={2} sx={{
-                    margin:{sm:'5vw 2vw 5vw 15vw',md:"4vw 2vw 4vw 6vw"}
+                    margin: { sm: '5vw 2vw 5vw 15vw', md: "4vw 2vw 4vw 6vw" }
                 }}>
                     <Grid item xs={12} sm={10} md={6}>
                         <Card sx={{
-                            borderRadius:'1vw',
-                            boxShadow:'inset 2px 2px 5px #babecc,inset -5px -5px 10px #fffff7',
-                            transition:'all ease 0.5s',
-                            "&:hover":{
-                                background:'blue'
+                            borderRadius: '1vw',
+                            boxShadow: 'inset 2px 2px 5px #babecc,inset -5px -5px 10px #fffff7',
+                            transition: 'all ease 0.5s',
+                            "&:hover": {
+                                background: 'blue'
                             }
-                            }}>
-                            <CardMedia component='img' 
+                        }}>
+                            <CardMedia component='img'
                                 src='https://images.unsplash.com/photo-1514539079130-25950c84af65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJhY3VsYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60' alt='poster' />
                             <CardHeader
-                            action={
-                                <IconButton>
-                                    <MoreVert />
-                                </IconButton>
-                            }
-                            title="Favorite Movies"
-                            subheader='Browse through our collection of movies' />
+                                action={
+                                    <IconButton>
+                                        <MoreVert />
+                                    </IconButton>
+                                }
+                                title="Favorite Movies"
+                                subheader='Browse through our collection of movies' />
                             <CardContent>
                                 <ImageList cols={3} rowHeight={100}>
                                     <ImageListItem>
@@ -86,34 +87,38 @@ const Home = () => {
                                 </ImageList>
                             </CardContent>
                             <CardActions>
-                                <Button component='a' href='/movie' variant='contained' color='error' sx={{
-                                    margin:"0 30%",
-                                    '&:hover':{
-                                        width:"10vw",
-                                        borderRadius:'2vw'
+                                <Button variant='contained' color='error' sx={{
+                                    margin: "0 30%",
+                                    '&:hover': {
+                                        width: "10vw",
+                                        borderRadius: '2vw'
                                     }
-                                }}>Browse</Button>
+                                }}>
+                                    <Link to='/movie'>
+                                        Browse
+                                    </Link>
+                                </Button>
                             </CardActions>
                         </Card>
                     </Grid>
                     <Grid item xs={12} sm={10} md={6}>
-                    <Card sx={{
-                            borderRadius:'1vw',
-                            boxShadow:'inset 2px 2px 5px #babecc,inset -5px -5px 10px #fffff7',
-                            transition:'all ease 0.5s',
-                            "&:hover":{
-                                backgroundColor:'blue'
+                        <Card sx={{
+                            borderRadius: '1vw',
+                            boxShadow: 'inset 2px 2px 5px #babecc,inset -5px -5px 10px #fffff7',
+                            transition: 'all ease 0.5s',
+                            "&:hover": {
+                                backgroundColor: 'blue'
                             }
-                            }}>
+                        }}>
                             <CardMedia component='img' src='https://media.istockphoto.com/photos/friends-in-the-cinema-picture-id1180701083?b=1&k=20&m=1180701083&s=170667a&w=0&h=i4RjlXSocbLiBpruz5KQY4wUlHZ9WX8bAVIMGf1qclw=' alt='poster' />
                             <CardHeader
-                            action={
-                                <IconButton>
-                                    <MoreVert />
-                                </IconButton>
-                            }
-                            title="Favorite Images"
-                            subheader='Browse through our collection of Images' />
+                                action={
+                                    <IconButton>
+                                        <MoreVert />
+                                    </IconButton>
+                                }
+                                title="Favorite Images"
+                                subheader='Browse through our collection of Images' />
                             <CardContent>
                                 <ImageList cols={3} rowHeight={100}>
                                     <ImageListItem>
@@ -129,34 +134,36 @@ const Home = () => {
                             </CardContent>
                             <CardActions>
                                 <Button component='a' href='/image' variant='contained' color='error' sx={{
-                                    margin:"0 30%",
-                                    '&:hover':{
-                                        width:"10vw",
-                                        borderRadius:'2vw'
+                                    margin: "0 30%",
+                                    '&:hover': {
+                                        width: "10vw",
+                                        borderRadius: '2vw'
                                     }
-                                }}>Browse</Button>
+                                }}>
+                                    <Link to='/image'>Browse</Link>
+                                </Button>
                             </CardActions>
                         </Card>
-                    
+
                     </Grid>
                     <Grid item xs={12} sm={10} md={6}>
-                    <Card sx={{
-                            borderRadius:'1vw',
-                            boxShadow:'inset 2px 2px 5px #babecc,inset -5px -5px 10px #fffff7',
-                            transition:'all ease 0.5s',
-                            "&:hover":{
-                                backgroundColor:'blue'
+                        <Card sx={{
+                            borderRadius: '1vw',
+                            boxShadow: 'inset 2px 2px 5px #babecc,inset -5px -5px 10px #fffff7',
+                            transition: 'all ease 0.5s',
+                            "&:hover": {
+                                backgroundColor: 'blue'
                             }
-                            }}>
+                        }}>
                             <CardMedia component='img' src='https://media.istockphoto.com/photos/read-this-book-you-wont-regret-it-picture-id1334220585?b=1&k=20&m=1334220585&s=170667a&w=0&h=E812KKzLrFhiAGjHAakbOmc_Lrs_leRRBMQDcNIcreg=' alt='poster' />
                             <CardHeader
-                            action={
-                                <IconButton>
-                                    <MoreVert />
-                                </IconButton>
-                            }
-                            title="Favorite Books"
-                            subheader='Browse through our collection of Books' />
+                                action={
+                                    <IconButton>
+                                        <MoreVert />
+                                    </IconButton>
+                                }
+                                title="Favorite Books"
+                                subheader='Browse through our collection of Books' />
                             <CardContent>
                                 <ImageList cols={3} rowHeight={100}>
                                     <ImageListItem>
@@ -172,19 +179,21 @@ const Home = () => {
                             </CardContent>
                             <CardActions>
                                 <Button component='a' href='/book' variant='contained' color='error' sx={{
-                                    margin:"0 30%",
-                                    '&:hover':{
-                                        width:"10vw",
-                                        borderRadius:'2vw'
+                                    margin: "0 30%",
+                                    '&:hover': {
+                                        width: "10vw",
+                                        borderRadius: '2vw'
                                     }
-                                }}>Browse</Button>
+                                }}>
+                                    <Link to='/book'>Browse</Link>
+                                </Button>
                             </CardActions>
                         </Card>
                     </Grid>
                 </Grid>
             </Box>
         </div>
-     );
+    );
 }
- 
+
 export default Home;
